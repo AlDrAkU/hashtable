@@ -20,7 +20,7 @@ class HashTable:
         else:
             slot.append((key, val))
   
-    # Return searched value with specific key
+    # Return searched value with specific key:
     def get_val(self, key):
         hashed_key = hash(key) % self.size
         slot = self.hash_table[hashed_key]
